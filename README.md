@@ -208,3 +208,77 @@ This workflow ensures a collaborative and organized approach to working with a j
     Replace `master` with the name of your main branch.
 
 These steps cover the basic operations of cloning a repository, pushing code by creating a branch, pulling changes made by others, and adding your project to GitHub.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+HOW TO PUSH NEW PROJECT ON GITHUB ***************
+To push a new project to GitHub using the Visual Studio Code terminal, you can follow these general steps:
+
+1. **Create a new repository on GitHub:**
+   - Go to GitHub and create a new repository.
+   - Note the URL of the repository (e.g., `https://github.com/your-username/your-repo.git`).
+
+2. **Initialize a Git repository locally:**
+   - Open Visual Studio Code.
+   - Open the terminal in Visual Studio Code (you can use the integrated terminal).
+   - Navigate to the root folder of your project.
+
+   ```bash
+   cd path/to/your/project
+   ```
+
+   - Run the following command to initialize a new Git repository:
+
+   ```bash
+   git init
+   ```
+
+3. **Add your files to the Git repository:**
+   - Use the following command to stage all the files for commit:
+
+   ```bash
+   git add .
+   ```
+
+   - You can also use `git add <filename>` to stage specific files.
+
+4. **Commit your changes:**
+   - Commit the staged changes with a commit message:
+
+   ```bash
+   git commit -m "Initial commit"
+   ```
+
+5. **Connect your local repository to the GitHub repository:**
+   - Add the GitHub repository as a remote. Replace the URL with your GitHub repository URL:
+
+   ```bash
+   git remote add origin https://github.com/your-username/your-repo.git
+   ```
+
+6. **Push your changes to GitHub:**
+   - Push your committed changes to the GitHub repository:
+
+   ```bash
+   git push -u origin master
+   ```
+
+   The `-u` flag is used to set up tracking. After this, you can simply use `git push` in the future.
+
+7. **Verify on GitHub:**
+   - Visit your GitHub repository in a web browser and check if your files have been pushed successfully.
+
+Your new project should now be on GitHub. Make sure you have the necessary permissions to push to the repository. If you encounter any issues, double-check your GitHub credentials, repository URL, and permissions.
