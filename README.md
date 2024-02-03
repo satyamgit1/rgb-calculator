@@ -1,4 +1,3 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
 
 
 first time :
@@ -10,6 +9,21 @@ git add .
 git commit -m "hello"
 
 git push -u origin main // git push will also run.
+
+******error******
+satyam@satyam jni interiors % git remote add origin https://github.com/satyamgit1/jni_interiors.git
+git branch -M main
+git push -u origin main
+error: remote origin already exists.
+remote: Repository not found.
+fatal: repository 'https://github.com/satyamgit1/JNI-interiors.git/' not found
+satyam@satyam jni interiors % git remote set-url origin https://github.com/satyamgit1/jni_interiors.git
+
+
+solution******************
+
+git remote set-url origin https://github.com/satyamgit1/jni_interiors.git
+git push -u origin main
 
 
 
