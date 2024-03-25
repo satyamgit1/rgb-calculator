@@ -296,3 +296,26 @@ To push a new project to GitHub using the Visual Studio Code terminal, you can f
    - Visit your GitHub repository in a web browser and check if your files have been pushed successfully.
 
 Your new project should now be on GitHub. Make sure you have the necessary permissions to push to the repository. If you encounter any issues, double-check your GitHub credentials, repository URL, and permissions.
+
+
+
+**PROBLEM:** 
+
+
+When attempting to push changes to a Git repository hosted on GitHub, encountered the error "remote: Repository not found. fatal: repository '
+
+**Solution:** 
+1)  Verify correct repository URL.
+2)  Ensure repository exists on GitHub.
+3)  Update remote URL if incorrect:
+git remote set-url origin your github repo URL
+
+git push -u origin main
+
+
+
+
+
+
+
+
